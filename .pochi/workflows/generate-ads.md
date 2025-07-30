@@ -2,81 +2,68 @@
 
 ## Trigger Requirements
 
-**STRICT REQUIREMENTS - ALL must be met:**
+**Flexible triggers - ANY of these work:**
+- Screenshot + "generate ads" / "create ads" / "make ads"
+- Screenshot + any ad creation request
+- "Make ads for [product]" (can ask for screenshot if helpful)
 
-1. User uploads a screenshot (image file)
-2. User uses command like: "generate ads", "create ad variations", "make ads from this"
-
-**If ANY requirement is missing:**
-
-- Stop immediately 
-- If no screenshot: "Please upload a screenshot first, then ask me to generate ads."
-- If no command: Wait for user to explicitly request ad generation
-- Do not proceed or generate anything without both requirements
+**If no screenshot provided:**
+- "Please upload a screenshot first, then ask me to generate ads."
 
 ## Analysis Phase
 
-First, analyze the uploaded screenshot:
+First, analyze the uploaded screenshot and gather requirements:
 
-### 1. Extract Key Information
-
+### 1. Extract Available Information
 - Product/service being advertised
 - Current headline and copy (if visible)
 - Brand colors and fonts used
 - Overall design style and mood
 - Call-to-action present
-- Target audience implied
 
-### 2. Handle Unclear Screenshots
+### 2. Clarification Questions (ALWAYS ASK)
 
-**If screenshot is unclear, low quality, or not an ad:**
+Before generating, ask user:
+- **"Is this screenshot for design inspiration, content reference, or both?"**
+- **"What product/service should I advertise?"** (even if obvious - confirm)
+- **"Who's your target audience?"** (age, interests, pain points)
+- **"What action should people take?"** (buy, sign up, visit, call, learn more)
+- **"Any specific style preferences?"** (modern, minimal, bold, professional, fun)
 
-- Ask specific clarifying questions:
-  - "What product/service should I advertise?"
-  - "What's the main benefit you want to highlight?"
-  - "Who is your target audience?"
-  - "What action should people take? (buy, sign up, learn more, etc.)"
-- Wait for answers before proceeding
-- Do not guess or assume product details
+**Wait for answers before proceeding - do not assume or guess**
 
 ### 3. Identify Core Value Proposition
-
-From the image or ask user to specify
+From the answers provided by user
 
 ## Generation Phase
 
-Create 5 distinct ad variations using the SAME brand colors and style from the original, but with different messaging approaches:
+Create 5 distinct ad variations with AI-generated content and different design approaches:
 
 ### Variation 1: Benefit-Focused
-
 - **Headline**: Lead with the primary benefit/value proposition
 - **Description**: 2-3 sentences explaining the key advantage
 - **Style**: Clean layout emphasizing the benefit
-- **Colors**: Maintain original brand colors, use primary color for emphasis
+- **Colors**: Use brand colors from reference, primary color for emphasis
 
 ### Variation 2: Urgency-Driven  
-
 - **Headline**: Create urgency ("Limited time", "Only today", "Don't miss out")
 - **Description**: Short, action-oriented copy with clear deadline
 - **Style**: Bold typography with urgency indicators
 - **Colors**: Use brand colors but make CTA button more prominent
 
 ### Variation 3: Question-Based
-
 - **Headline**: Ask a compelling question that resonates with pain points
 - **Description**: Answer the question with your solution
 - **Style**: Conversational layout that feels like dialogue
 - **Colors**: Softer application of brand colors for approachability
 
 ### Variation 4: Social Proof
-
 - **Headline**: Feature testimonial, review, or impressive statistic
 - **Description**: Expand on the social proof with credibility indicators
 - **Style**: Include visual elements like stars, quotes, or customer photos
 - **Colors**: Use brand colors with trust-building accents
 
 ### Variation 5: Minimalist
-
 - **Headline**: Ultra-simple, direct message (3-6 words max)
 - **Description**: One sentence with essential info only
 - **Style**: Maximum white space, single focal point
@@ -84,78 +71,66 @@ Create 5 distinct ad variations using the SAME brand colors and style from the o
 
 ## Output Requirements
 
-For each variation, create a complete HTML file with:
+Create a single combined HTML file containing all 5 variations:
 
-1. **Embedded CSS styling** (no external dependencies)
-2. **Standard ad dimensions**: Default to 1200x630 (social media) unless user specifies otherwise
-3. **Responsive design** that scales properly
-4. **Semantic HTML** with proper heading structure
-5. **Accessible design** with good contrast ratios
-6. **File naming**: `benefit-focused-ad.html`, `urgency-ad.html`, `question-ad.html`, `social-proof-ad.html`, `minimalist-ad.html`
+1. **File naming**: `ads-generated-YYYY-MM-DD-HH:MM.html` (e.g., `ads-generated-2025-07-30-14:30.html`)
+2. **Structure**: All 5 ad variations in one file with clear section breaks
+3. **Embedded CSS styling** (no external dependencies)
+4. **Standard ad dimensions**: Default to 1200x630 (social media) unless user specifies otherwise
+5. **Responsive design** that scales properly
+6. **Semantic HTML** with proper heading structure
+7. **Accessible design** with good contrast ratios
 
-## Delivery Method
-
-**IMPORTANT - Deliver to Slack AND GitHub:**
-
-1. **Create exactly 5 HTML files** as described above
-2. **Each file must be complete and functional** (test before delivering)
-3. **Upload each HTML file as attachment** to this Slack channel
-4. **Post a preview/description** of each ad in text format (since image generation may not work)
-5. **Create GitHub workflow:**
-   - Create new branch named: `ads-generation-[timestamp]`
-   - Add all 5 HTML files to the branch
-   - Commit with message: "Add 5 ad variations: [brief description]"
-   - Create PR from the branch to main
-   - Post the PR link in Slack
-
-6. **Final Slack summary:**
-   ```
-   ✅ Generated 5 ad variations
-   📁 Files attached above
-   🔗 GitHub PR: [link]
-   📊 Summary: [what makes each variation unique]
-   ```
-
-### Preview Format
-
-For each ad, post in Slack:
-
-```
-🎯 **[Variation Name]** (e.g., Benefit-Focused Ad)
-📎 [HTML file attachment]
-📝 Key features: [Brief description of approach]
+**File Structure:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ad Variations - [Product Name] - Generated [Date/Time]</title>
+    <style>/* Combined CSS for all variations */</style>
+</head>
+<body>
+    <h1>5 Ad Variations - [Product Name]</h1>
+    
+    <div class="ad-container variation-1">
+        <h2>1. Benefit-Focused</h2>
+        <!-- ad content -->
+    </div>
+    
+    <div class="ad-container variation-2">
+        <h2>2. Urgency-Driven</h2>
+        <!-- ad content -->
+    </div>
+    
+    <!-- Continue for all 5 variations -->
+</body>
+</html>
 ```
 
 ## Quality Control
 
 Before generating, confirm:
-
-- ✅ You can identify what product/service is being advertised
-- ✅ You have clear brand colors to work with (or fallback to neutral palette)
-- ✅ You understand the target audience
+- ✅ You have answers to all clarification questions
+- ✅ You understand the target audience and product
 - ✅ Each variation has a distinctly different messaging strategy
-- ✅ All variations maintain visual brand consistency
+- ✅ Brand colors are identified (or neutral palette chosen)
 
 ## Error Handling
 
 **If any step fails:**
-
-- **File creation fails**: Explain what went wrong, ask if user wants to try again
-- **GitHub operations fail**: Still deliver files to Slack, explain GitHub issue
 - **Unclear input**: Ask specific clarifying questions, don't guess
+- **Missing information**: Stop and ask for required details
 - **Technical limits**: Explain limitations and suggest alternatives
 
 **Never:**
-
 - Generate ads without clear requirements
-- Assume product details not visible in screenshot
-- Proceed silently if something fails
+- Assume product details not provided by user
+- Proceed without getting clarification answers
 - Create generic placeholder content
 
 ## User Interaction
 
 After delivering ads, ask:
-
 - "Which variation works best for your needs?"
 - "Would you like me to create more variations of a specific style?"
 - "Should I adjust anything about the messaging or design?"
