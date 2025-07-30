@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-Based Ad</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .ad-container {
+            width: 1200px;
+            height: 630px;
+            background-color: #FFFFFF; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row-reverse; /* Flip layout */
+            overflow: hidden;
+        }
+
+        .content-section {
+            width: 50%;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+            background-color: #FDF6F7; /* Lighter pink */
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            color: #D9A6B4; 
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 22px;
+            color: #555;
+            max-width: 450px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background-color: #D9A6B4;
+            color: #FFFFFF;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 30px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background-color: #C794A2;
+        }
+
+        .image-section {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .product-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="content-section">
+            <h1>Tired of Dull, Dry Skin?</h1>
+            <p>Rediscover your skin's natural radiance. Our Hydrate & Glow serum provides the essential moisture your skin is craving.</p>
+            <a href="#" class="cta-button">FIND YOUR SOLUTION</a>
+        </div>
+        <div class="image-section">
+             <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,q_auto,w_720/645249f48d9899001d449864.jpg" alt="Hydrate & Glow Product" class="product-image"/>
+        </div>
+    </div>
+</body>
+</html>
