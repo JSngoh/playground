@@ -13,39 +13,34 @@ Create high-converting ads using screenshot inspiration for design style.
 
 ## Detailed Step-by-Step Process
 
-### STEP 1: Extract Design Specs Accurately (CRITICAL)
-**DO THIS FIRST - Be extremely precise:**
+### STEP 1: Extract Design Specs Accurately (CRITICAL - USE THIS EXACT METHOD)
 
-**1. Color Analysis (Use Color Picker Methodology):**
-- Identify the dominant background color and state its approximate hex code
-- List all accent colors present and their approximate hex codes  
-- Note color relationships: warm/cool, vintage/modern, muted/vibrant
-- Example: "Deep red (#B22222), warm gold (#DAA520), cream (#F5F5DC)"
+**Multi-Stage Vision Analysis (Follow this sequence):**
 
-**2. Typography Deep Analysis:**
-- Font style: Serif, sans-serif, script, display, decorative
-- Font weight: Light, regular, bold, extra-bold, black
-- Font treatment: 3D effects, shadows, outlines, gradients
-- Size hierarchy: What's large vs small
-- Letter spacing: Tight, normal, wide
-- Example: "Bold 3D display font with drop shadows and gold outlines"
+**1a. Color Analysis:**
+- "I will analyze this image in HSV color space to identify the 3-5 dominant colors"
+- "For each major color area, I'll provide specific hex codes: #RRGGBB"
+- "I'll note color relationships: warm/cool, muted/vibrant, complementary/analogous"
 
-**3. Visual Style Classification:**
-- Era: Modern, retro (70s/80s/90s), vintage, futuristic
-- Mood: Professional, playful, elegant, rugged, minimalist
-- Industry feel: Tech, fashion, music, food, corporate
-- Design approach: Flat, dimensional, illustrated, photographic
+**1b. Typography Deep Analysis:**
+- "Font weight: thin/light/regular/medium/semibold/bold/black"
+- "Font style: serif/sans-serif/slab/script/display/decorative"
+- "Typography effects: flat/3D/shadows/outlines/gradients/embossed"
+- "Letter spacing: condensed/normal/expanded"
+- "Era classification: modern/retro-70s/retro-80s/vintage/art-deco/futuristic"
 
-**4. Layout Structure:**
-- Text alignment: Center, left, justified
-- Spacing: Tight, generous, cramped
-- Hierarchy: What draws attention first, second, third
-- Composition: Symmetrical, asymmetrical, grid-based
+**1c. Visual Style Assessment:**
+- "Overall aesthetic mood: [be very specific - not just 'retro' but '1980s synthwave' or '1950s diner']"
+- "Design complexity: minimal/moderate/busy/ornate"
+- "Visual hierarchy: what draws attention first, second, third"
 
-**VERIFICATION STEP:**
-Before proceeding, state: "I will now create ads using [specific color palette] with [specific typography style] in a [specific visual mood] aesthetic."
+**1d. Confidence Check (MANDATORY):**
+"My confidence in this analysis (1-10): [score]
+- Colors: [score] - If below 7, I'll state: 'Colors appear approximately...'
+- Typography: [score] - If below 7, I'll describe general style only
+- Overall accuracy: [score] - If below 6, I'll ask for user confirmation"
 
-**CRITICAL RULE:** If any element is unclear, state "approximately" or "appears to be" rather than guessing. Accuracy over speed.
+**CRITICAL RULE:** Only proceed to Step 2 if overall confidence ≥ 6. If below 6, ask user to confirm analysis before generating ads.
 
 ### STEP 2: Get Product Information (MANDATORY - CANNOT SKIP)
 **STOP HERE. Ask this exact question and wait for response:**
