@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Look Good. Feel Great. Win.">
+    <meta property="og:description" content="The grooming edge that sets you apart">
+    <meta property="og:image" content="variation-3-social.html">
+    <meta property="og:type" content="website">
+    <title>Social Success - Grooming Ad</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial Black', Arial, sans-serif;
+            background: #F7E7CE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .ad-container {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(180deg, #4A90A4 0%, #D73027 70%, #F7E7CE 100%);
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #1A1A1A;
+        }
+        
+        .hero-section {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 320px;
+            background: #4A90A4;
+            border: 4px solid #1A1A1A;
+        }
+        
+        .success-silhouette {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 240px;
+            background: #F7E7CE;
+            border: 3px solid #1A1A1A;
+            clip-path: polygon(30% 0%, 70% 0%, 85% 20%, 85% 60%, 70% 80%, 70% 100%, 30% 100%, 30% 80%, 15% 60%, 15% 20%);
+        }
+        
+        .confidence-aura {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 260px;
+            border: 4px solid #D73027;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+            50% { opacity: 0.9; transform: translateX(-50%) scale(1.05); }
+        }
+        
+        .social-icons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: #D73027;
+            border: 3px solid #1A1A1A;
+            position: relative;
+        }
+        
+        .social-icon:nth-child(1) { border-radius: 50%; } /* Dating */
+        .social-icon:nth-child(2) { border-radius: 4px; } /* Professional */
+        .social-icon:nth-child(3) { border-radius: 8px; } /* Social */
+        
+        .social-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background: #F7E7CE;
+            border-radius: 2px;
+        }
+        
+        .success-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .star {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #D73027;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        
+        .star:nth-child(1) { top: 60px; left: 80px; animation: twinkle 2s infinite; }
+        .star:nth-child(2) { top: 100px; right: 90px; animation: twinkle 2s infinite 0.5s; }
+        .star:nth-child(3) { bottom: 200px; left: 60px; animation: twinkle 2s infinite 1s; }
+        .star:nth-child(4) { bottom: 180px; right: 70px; animation: twinkle 2s infinite 1.5s; }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        
+        .main-text {
+            position: absolute;
+            bottom: 120px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #6B6B6B;
+            font-size: 120px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-shadow: 3px 3px 0px #1A1A1A;
+            line-height: 0.8;
+        }
+        
+        .sub-text {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #1A1A1A;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .status-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #D73027;
+            color: #F7E7CE;
+            padding: 8px 16px;
+            border: 3px solid #1A1A1A;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        
+        .attraction-rays {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+        }
+        
+        .ray {
+            position: absolute;
+            width: 3px;
+            height: 60px;
+            background: linear-gradient(to bottom, transparent, #D73027, transparent);
+            transform-origin: 50% 200px;
+            opacity: 0.4;
+        }
+        
+        .ray:nth-child(1) { transform: rotate(0deg); }
+        .ray:nth-child(2) { transform: rotate(45deg); }
+        .ray:nth-child(3) { transform: rotate(90deg); }
+        .ray:nth-child(4) { transform: rotate(135deg); }
+        .ray:nth-child(5) { transform: rotate(180deg); }
+        .ray:nth-child(6) { transform: rotate(225deg); }
+        .ray:nth-child(7) { transform: rotate(270deg); }
+        .ray:nth-child(8) { transform: rotate(315deg); }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="status-badge">ELITE</div>
+        
+        <div class="attraction-rays">
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+        </div>
+        
+        <div class="success-elements">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        
+        <div class="hero-section">
+            <div class="confidence-aura"></div>
+            <div class="success-silhouette"></div>
+            <div class="social-icons">
+                <div class="social-icon"></div>
+                <div class="social-icon"></div>
+                <div class="social-icon"></div>
+            </div>
+        </div>
+        
+        <div class="main-text">ELITE</div>
+        <div class="sub-text">STAND OUT. GET NOTICED.</div>
+    </div>
+</body>
+</html>

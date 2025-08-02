@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="5 Minutes. Game Changed.">
+    <meta property="og:description" content="Transform your morning routine instantly">
+    <meta property="og:image" content="variation-2-urgency.html">
+    <meta property="og:type" content="website">
+    <title>Quick Grooming - Urgency Ad</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial Black', Arial, sans-serif;
+            background: #F7E7CE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .ad-container {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(45deg, #D73027 0%, #4A90A4 50%, #F7E7CE 100%);
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #1A1A1A;
+        }
+        
+        .clock-section {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 320px;
+            background: #D73027;
+            border: 4px solid #1A1A1A;
+        }
+        
+        .clock-face {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 180px;
+            background: #F7E7CE;
+            border: 6px solid #1A1A1A;
+            border-radius: 50%;
+        }
+        
+        .clock-hands {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .hour-hand {
+            position: absolute;
+            width: 4px;
+            height: 50px;
+            background: #1A1A1A;
+            top: -25px;
+            left: -2px;
+            transform-origin: 50% 100%;
+            transform: rotate(90deg);
+        }
+        
+        .minute-hand {
+            position: absolute;
+            width: 3px;
+            height: 70px;
+            background: #D73027;
+            top: -35px;
+            left: -1.5px;
+            transform-origin: 50% 100%;
+            transform: rotate(30deg);
+        }
+        
+        .center-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #1A1A1A;
+            border-radius: 50%;
+            top: -4px;
+            left: -4px;
+        }
+        
+        .time-markers {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 60px;
+        }
+        
+        .marker {
+            position: absolute;
+            background: #1A1A1A;
+            border-radius: 2px;
+        }
+        
+        .marker-12 { width: 3px; height: 20px; top: 0; left: 50%; transform: translateX(-50%); }
+        .marker-3 { width: 20px; height: 3px; right: 0; top: 50%; transform: translateY(-50%); }
+        .marker-6 { width: 3px; height: 20px; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .marker-9 { width: 20px; height: 3px; left: 0; top: 50%; transform: translateY(-50%); }
+        
+        .grooming-icons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+        }
+        
+        .icon {
+            width: 30px;
+            height: 30px;
+            background: #4A90A4;
+            border: 2px solid #1A1A1A;
+            border-radius: 4px;
+        }
+        
+        .main-text {
+            position: absolute;
+            bottom: 120px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #6B6B6B;
+            font-size: 120px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-shadow: 3px 3px 0px #1A1A1A;
+            line-height: 0.8;
+        }
+        
+        .sub-text {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #1A1A1A;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .urgency-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #D73027;
+            color: #F7E7CE;
+            padding: 8px 16px;
+            border: 3px solid #1A1A1A;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .speed-lines {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        
+        .speed-line {
+            height: 3px;
+            background: #1A1A1A;
+            margin: 12px 0;
+            opacity: 0.4;
+        }
+        
+        .speed-line:nth-child(1) { width: 40%; animation: speedMove 1s infinite; }
+        .speed-line:nth-child(2) { width: 60%; animation: speedMove 1s infinite 0.2s; }
+        .speed-line:nth-child(3) { width: 35%; animation: speedMove 1s infinite 0.4s; }
+        
+        @keyframes speedMove {
+            0% { transform: translateX(-20px); opacity: 0; }
+            50% { opacity: 0.4; }
+            100% { transform: translateX(20px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="urgency-badge">5 MIN</div>
+        
+        <div class="speed-lines">
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+        </div>
+        
+        <div class="clock-section">
+            <div class="clock-face">
+                <div class="time-markers">
+                    <div class="marker marker-12"></div>
+                    <div class="marker marker-3"></div>
+                    <div class="marker marker-6"></div>
+                    <div class="marker marker-9"></div>
+                </div>
+                <div class="clock-hands">
+                    <div class="hour-hand"></div>
+                    <div class="minute-hand"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+            <div class="grooming-icons">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+        </div>
+        
+        <div class="main-text">FAST</div>
+        <div class="sub-text">DAILY ROUTINE REVOLUTION</div>
+    </div>
+</body>
+</html>
