@@ -31,29 +31,37 @@ Create high-converting ads using screenshot inspiration for design style.
 Use screenshot's visual style with different messaging approaches.
 
 ### 4. Package & Deliver
-**Create GitHub release with organized assets:**
 
-1. **Generate ZIP package:**
-```
-ProductName-Ads-YYYY-MM-DD-HH:MM.zip
-├── inspiration-reference.png (original screenshot)
-├── all-variations.html (combined view of all 3 ads)
-├── exports/
-│   ├── variation-1-benefit.png
-│   ├── variation-2-urgency.png
-│   └── variation-3-social.png
-└── generation-details.txt (product info, audience, timestamp)
-```
+**Step-by-step delivery process:**
 
-2. **Auto-commit to organized repo structure:**
+1. **Generate organized folder structure:**
 ```
 ads-generated/
-└── 2025-08-02-productivity-app/
+└── YYYY-MM-DD-ProductName/
+    ├── inspiration-reference.png (original screenshot)
+    ├── all-variations.html (combined view)
+    ├── variation-1-benefit.html
+    ├── variation-2-urgency.html
+    ├── variation-3-social.html
+    └── generation-details.txt (product info, audience, timestamp)
 ```
 
-3. **Create GitHub release with ZIP as downloadable asset**
+2. **Create PR with new folder:**
+   - Branch: `ads/YYYY-MM-DD-ProductName`
+   - Commit message: "Add ads for [ProductName] - [timestamp]"
+   - Auto-merge PR
 
-4. **Share release download link in Slack** - user gets direct ZIP download
+3. **Create GitHub release with ZIP asset:**
+   - Release name: `ProductName-Ads-YYYY-MM-DD-HH:MM`
+   - Generate ZIP containing all folder contents
+   - Attach ZIP as downloadable release asset
+
+4. **Share release download link in Slack:**
+   - User gets direct ZIP download
+   - Clean, professional delivery
+
+## If No Screenshot
+"Upload a design screenshot first."
 
 ## If No Screenshot
 "Upload a design screenshot first."
