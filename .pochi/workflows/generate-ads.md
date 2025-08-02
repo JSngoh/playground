@@ -14,22 +14,38 @@ Create high-converting ads using screenshot inspiration for design style.
 ## Detailed Step-by-Step Process
 
 ### STEP 1: Extract Design Specs Accurately (CRITICAL)
-**DO THIS FIRST - Do not skip or rush this step:**
+**DO THIS FIRST - Be extremely precise:**
 
-1. **Analyze the screenshot systematically:**
-   - Identify ALL colors present (describe them precisely)
-   - Note typography styles (bold, italic, serif, sans-serif, sizes)
-   - Measure visual proportions and spacing
-   - Read ALL visible text exactly as written
-   - Categorize overall aesthetic (vintage, modern, minimal, bold, playful)
+**1. Color Analysis (Use Color Picker Methodology):**
+- Identify the dominant background color and state its approximate hex code
+- List all accent colors present and their approximate hex codes  
+- Note color relationships: warm/cool, vintage/modern, muted/vibrant
+- Example: "Deep red (#B22222), warm gold (#DAA520), cream (#F5F5DC)"
 
-2. **Extract exact specifications:**
-   - **Colors:** If unclear, state "colors appear to be approximately..." rather than guessing
-   - **Typography:** Describe weight, style, size relationships
-   - **Layout:** Note alignment, spacing patterns, visual hierarchy
-   - **Mood:** Professional, casual, energetic, calm, etc.
+**2. Typography Deep Analysis:**
+- Font style: Serif, sans-serif, script, display, decorative
+- Font weight: Light, regular, bold, extra-bold, black
+- Font treatment: 3D effects, shadows, outlines, gradients
+- Size hierarchy: What's large vs small
+- Letter spacing: Tight, normal, wide
+- Example: "Bold 3D display font with drop shadows and gold outlines"
 
-3. **Document findings clearly** before proceeding to next step
+**3. Visual Style Classification:**
+- Era: Modern, retro (70s/80s/90s), vintage, futuristic
+- Mood: Professional, playful, elegant, rugged, minimalist
+- Industry feel: Tech, fashion, music, food, corporate
+- Design approach: Flat, dimensional, illustrated, photographic
+
+**4. Layout Structure:**
+- Text alignment: Center, left, justified
+- Spacing: Tight, generous, cramped
+- Hierarchy: What draws attention first, second, third
+- Composition: Symmetrical, asymmetrical, grid-based
+
+**VERIFICATION STEP:**
+Before proceeding, state: "I will now create ads using [specific color palette] with [specific typography style] in a [specific visual mood] aesthetic."
+
+**CRITICAL RULE:** If any element is unclear, state "approximately" or "appears to be" rather than guessing. Accuracy over speed.
 
 ### STEP 2: Get Product Information (MANDATORY - CANNOT SKIP)
 **STOP HERE. Ask this exact question and wait for response:**
