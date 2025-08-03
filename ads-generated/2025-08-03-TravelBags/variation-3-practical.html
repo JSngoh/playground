@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Smart Travel Gear - Built to Last">
+    <meta property="og:description" content="Durable, organized, and TSA-approved travel bags for modern nomads">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>Smart Travel Gear - Built to Last</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Oswald:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #4169E1 0%, #3651D1 100%);
+            font-family: 'Oswald', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+            position: relative;
+        }
+        
+        .text-section {
+            flex: 1;
+            z-index: 10;
+        }
+        
+        .tagline {
+            background: #FF4500;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 24px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            transform: rotate(-2deg);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .main-text {
+            font-family: 'Anton', sans-serif;
+            font-size: 84px;
+            font-weight: 400;
+            color: #FF4500;
+            line-height: 0.9;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0px #000000, 6px 6px 12px rgba(0,0,0,0.4);
+            letter-spacing: -2px;
+        }
+        
+        .sub-text {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .features {
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 12px;
+        }
+        
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            background: #FF4500;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+        
+        .feature-text {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .cta {
+            background: white;
+            color: #4169E1;
+            padding: 16px 32px;
+            font-size: 28px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        
+        .cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        .product-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .smart-bag {
+            width: 380px;
+            height: 420px;
+            position: relative;
+            filter: drop-shadow(8px 8px 16px rgba(0,0,0,0.4));
+        }
+        
+        .main-compartment {
+            width: 280px;
+            height: 350px;
+            background: linear-gradient(145deg, #2C2C2C 0%, #000000 100%);
+            border-radius: 20px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            border: 4px solid white;
+        }
+        
+        .telescopic-handle {
+            width: 12px;
+            height: 80px;
+            background: linear-gradient(180deg, #666666 0%, #333333 100%);
+            position: absolute;
+            top: -50px;
+            left: 164px;
+            border: 2px solid white;
+            border-radius: 6px;
+        }
+        
+        .handle-grip {
+            width: 60px;
+            height: 16px;
+            background: #1A1A1A;
+            border-radius: 8px;
+            position: absolute;
+            top: -66px;
+            left: 140px;
+            border: 2px solid white;
+        }
+        
+        .front-pocket {
+            width: 200px;
+            height: 80px;
+            background: linear-gradient(145deg, #1A1A1A 0%, #000000 100%);
+            border-radius: 12px;
+            position: absolute;
+            top: 60px;
+            left: 90px;
+            border: 3px solid white;
+        }
+        
+        .laptop-compartment {
+            width: 180px;
+            height: 8px;
+            background: #FF4500;
+            position: absolute;
+            top: 160px;
+            left: 100px;
+            border-radius: 4px;
+        }
+        
+        .organization-pockets {
+            position: absolute;
+            top: 200px;
+            left: 80px;
+            display: flex;
+            gap: 8px;
+        }
+        
+        .small-pocket {
+            width: 30px;
+            height: 20px;
+            background: #FF4500;
+            border-radius: 4px;
+            border: 1px solid white;
+        }
+        
+        .usb-port {
+            width: 16px;
+            height: 8px;
+            background: #00FF00;
+            border-radius: 2px;
+            position: absolute;
+            top: 180px;
+            left: 320px;
+            border: 1px solid white;
+        }
+        
+        .wheels {
+            position: absolute;
+            bottom: -10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 70px;
+        }
+        
+        .wheel {
+            width: 45px;
+            height: 45px;
+            background: radial-gradient(circle, #666666 0%, #333333 100%);
+            border-radius: 50%;
+            border: 3px solid white;
+            position: relative;
+        }
+        
+        .wheel::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #FF4500;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .security-lock {
+            width: 20px;
+            height: 25px;
+            background: #FFD700;
+            border-radius: 4px 4px 8px 8px;
+            position: absolute;
+            top: 120px;
+            right: 60px;
+            border: 2px solid white;
+        }
+        
+        .security-lock::before {
+            content: '';
+            width: 12px;
+            height: 8px;
+            border: 2px solid #FFD700;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            position: absolute;
+            top: -10px;
+            left: 2px;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 25% 25%, white 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, white 2px, transparent 2px);
+            background-size: 60px 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <div class="text-section">
+            <div class="tagline">Smart & Durable</div>
+            <div class="main-text">BUILT<br>TO<br>LAST</div>
+            <div class="sub-text">Travel Gear That Works</div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-text">TSA-Approved Lock</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-text">Built-in USB Charging</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💻</div>
+                    <div class="feature-text">Laptop Compartment</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔧</div>
+                    <div class="feature-text">Lifetime Warranty</div>
+                </div>
+            </div>
+            <button class="cta">GET YOURS NOW</button>
+        </div>
+        
+        <div class="product-section">
+            <div class="smart-bag">
+                <div class="handle-grip"></div>
+                <div class="telescopic-handle"></div>
+                <div class="main-compartment">
+                    <div class="front-pocket"></div>
+                    <div class="laptop-compartment"></div>
+                    <div class="organization-pockets">
+                        <div class="small-pocket"></div>
+                        <div class="small-pocket"></div>
+                        <div class="small-pocket"></div>
+                        <div class="small-pocket"></div>
+                    </div>
+                    <div class="security-lock"></div>
+                </div>
+                <div class="usb-port"></div>
+                <div class="wheels">
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
