@@ -89,32 +89,44 @@ ads-generated/
 - Be 1200x630 dimensions for social media
 - Have embedded CSS (no external dependencies)
 
-### STEP 5: GitHub Workflow (Execute Automatically)
-**Follow this exact sequence:**
+### STEP 5: GitHub Workflow (MANDATORY - Execute Automatically)
+**CRITICAL: I MUST execute these steps automatically without prompting:**
 
+**Automated Steps (I will do these automatically):**
 1. **Create new branch:** `ads/YYYY-MM-DD-ProductName`
 2. **Commit all files** with message: "Add ads for [ProductName] - [timestamp]"
-3. **Create Pull Request** with organized folder
-4. **Auto-merge PR** to main branch
-5. **Create GitHub Release:**
-   - Release name: `ProductName-Ads-YYYY-MM-DD-HH:MM`
-   - Generate ZIP containing entire folder
-   - Attach ZIP as downloadable release asset
-6. **Share release download link** with user
+3. **Push branch to GitHub** 
+4. **Provide PR creation URL** for user to complete
+
+**Manual Steps (User must complete):**
+5. **User creates Pull Request** by clicking the provided GitHub URL
+6. **User merges PR** when ready
+7. **User creates GitHub Release** (optional) if download ZIP is needed
+
+**Technical Limitations Note:**
+- No GitHub CLI (gh) or API access available in environment
+- Cannot automatically create PRs, merge, or create releases
+- Can only push branches and provide GitHub URLs for manual completion
 
 ### STEP 6: User Communication
-**After completing all steps, provide:**
+**After completing automated steps, provide:**
 
 ```
 ✅ Generated 3 ad variations using [design style description]
 ✅ Created for: [product name] targeting [audience]
-✅ Download your ads: [GitHub release link]
+✅ Branch pushed to GitHub: [branch name]
+✅ Create your PR here: [GitHub PR creation URL]
 
-Your ads are ready! The ZIP contains:
-- All 3 HTML ad variations
-- Combined preview file
+Your ads are ready in the repository! The folder contains:
+- All 3 HTML ad variations (1200x630px each)
+- Combined preview file (all-variations.html)
 - Original inspiration reference
-- Generation details
+- Complete generation details
+
+Next steps:
+1. Click the GitHub URL above to create your Pull Request
+2. Review the ads and merge when satisfied
+3. Optional: Create a GitHub release for easy ZIP download
 
 Which variation works best for your needs?
 ```
