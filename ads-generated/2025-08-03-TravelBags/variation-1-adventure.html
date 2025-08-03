@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pack Your Dreams - Adventure Travel Bags">
+    <meta property="og:description" content="Premium travel bags for the next generation of explorers">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>Pack Your Dreams - Adventure Travel Bags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Oswald:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #4169E1 0%, #3651D1 100%);
+            font-family: 'Oswald', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+            position: relative;
+        }
+        
+        .text-section {
+            flex: 1;
+            z-index: 10;
+        }
+        
+        .tagline {
+            background: #FF4500;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 24px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            transform: rotate(-2deg);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .main-text {
+            font-family: 'Anton', sans-serif;
+            font-size: 84px;
+            font-weight: 400;
+            color: #FF4500;
+            line-height: 0.9;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0px #000000, 6px 6px 12px rgba(0,0,0,0.4);
+            letter-spacing: -2px;
+        }
+        
+        .sub-text {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .cta {
+            background: white;
+            color: #4169E1;
+            padding: 16px 32px;
+            font-size: 28px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        
+        .cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        .product-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .travel-bag {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            filter: drop-shadow(8px 8px 16px rgba(0,0,0,0.4));
+        }
+        
+        .bag-main {
+            width: 280px;
+            height: 320px;
+            background: linear-gradient(145deg, #2C2C2C 0%, #000000 100%);
+            border-radius: 20px 20px 8px 8px;
+            position: absolute;
+            top: 40px;
+            left: 60px;
+            border: 4px solid white;
+        }
+        
+        .bag-handle {
+            width: 120px;
+            height: 20px;
+            background: #1A1A1A;
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            left: 140px;
+            border: 2px solid white;
+        }
+        
+        .bag-zipper {
+            width: 240px;
+            height: 8px;
+            background: #FF4500;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            border-radius: 4px;
+        }
+        
+        .bag-pocket {
+            width: 180px;
+            height: 60px;
+            background: linear-gradient(145deg, #1A1A1A 0%, #000000 100%);
+            border-radius: 8px;
+            position: absolute;
+            top: 120px;
+            left: 110px;
+            border: 2px solid white;
+        }
+        
+        .wheels {
+            position: absolute;
+            bottom: 20px;
+        }
+        
+        .wheel {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #666666 0%, #333333 100%);
+            border-radius: 50%;
+            position: absolute;
+            border: 3px solid white;
+        }
+        
+        .wheel:first-child {
+            left: 80px;
+        }
+        
+        .wheel:last-child {
+            right: 80px;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 25% 25%, white 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, white 2px, transparent 2px);
+            background-size: 60px 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <div class="text-section">
+            <div class="tagline">Adventure Starts</div>
+            <div class="main-text">PACK<br>YOUR<br>DREAMS</div>
+            <div class="sub-text">Travel Bags Built for Explorers</div>
+            <button class="cta">START YOUR JOURNEY</button>
+        </div>
+        
+        <div class="product-section">
+            <div class="travel-bag">
+                <div class="bag-handle"></div>
+                <div class="bag-main">
+                    <div class="bag-zipper"></div>
+                    <div class="bag-pocket"></div>
+                </div>
+                <div class="wheels">
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
